@@ -5,3 +5,7 @@ class Person:
     
     def introduce(self):
         print(f"Xin chào! Tôi là {self.name}, quê quán ở {self.hometown}.")
+
+# Sử dụng đối tượng để giới thiệu
+me = Person("Nguyễn Quốc Anh Quân", "Hà Nội")
+me.introduce()
