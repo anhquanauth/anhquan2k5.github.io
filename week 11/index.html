@@ -1,0 +1,21 @@
+
+import math
+
+def factorial_sum(n):
+    try:
+        if n < 0:
+            raise ValueError("Input must be a non-negative integer")
+        
+        total_sum = 0
+        for i in range(n + 1):
+            total_sum += math.factorial(i) - 1
+        
+        return total_sum
+    
+    except ValueError as e:
+        return f"Error: {e}"
+
+# Example usage:
+n = 5
+result = factorial_sum(n)
+print(f"Result for n={n}: {result}")
